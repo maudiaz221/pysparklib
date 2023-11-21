@@ -1,0 +1,17 @@
+name: myenv
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9.1
+  - jupyterlab
+  - pyspark
+  - ipykernel
+  - googleapis-common-protos==1.56.4
+  - py4j
+  - pandas
+  - pyarrow==4.0.0
+  - numpy
+  - grpcio==1.48
+  - grpcio-status==1.48
+  - googleapis-common-protos==1.56.4
