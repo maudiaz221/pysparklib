@@ -20,8 +20,14 @@ Apache Spark es un sistema de computación distribuida de código abierto que pr
 
 ## Para Empezar:
 
-Para comenzar a usar Apache Spark, puedes descargarlo desde el [sitio web oficial de Apache Spark](https://spark.apache.org/). Además, hay varios recursos y tutoriales disponibles para ayudarte a comenzar con la programación en Spark.
+[sitio web oficial de Apache Spark](https://spark.apache.org/). Además, hay varios recursos y tutoriales disponibles para ayudarte con la programación en Spark.
 
 [Presentación](https://docs.google.com/presentation/d/1bhRxTo7rLZ1KqncpJt1iKgVE3o7CnOey6CCWynIhR00/edit?usp=sharing)
 
-¡Feliz procesamiento con Spark!
+## Tarea 
+
+1- Hagan una folder con su iniciales y clave unica dentro de la carpeta respuestas
+2- copien el folder Tarea y notebooks a su carpeta de iniciales y clave unica
+3- Respondan la tarea dentro del folder Tarea y subanla al repo (NO USEN GIT ADD. Y SOLO TRABAJEN DENTRO DE SU CARPETA)
+
+
