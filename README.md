@@ -26,8 +26,8 @@ Apache Spark es un sistema de computación distribuida de código abierto que pr
 
 ## Tarea 
 
-1- Hagan una folder con su iniciales y clave unica dentro de la carpeta respuestas
-2- copien el folder Tarea y notebooks a su carpeta de iniciales y clave unica
-3- Respondan la tarea dentro del folder Tarea y subanla al repo (NO USEN GIT ADD. Y SOLO TRABAJEN DENTRO DE SU CARPETA)
+- Hagan una folder con su iniciales y clave unica dentro de la carpeta respuestas
+- copien el folder Tarea y notebooks a su carpeta de iniciales y clave unica
+- Respondan la tarea dentro del folder Tarea y subanla al repo (NO USEN GIT ADD. Y SOLO TRABAJEN DENTRO DE SU CARPETA)
 
 
