@@ -12,6 +12,5 @@ dependencies:
   - pandas
   - pyarrow==4.0.0
   - numpy
-  - grpcio==1.48
-  - grpcio-status==1.48
-  - googleapis-common-protos==1.56.4
+  - grpcio
+  - grpcio-status
