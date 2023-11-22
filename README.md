@@ -8,7 +8,7 @@ Apache Spark es un sistema de computación distribuida de código abierto que pr
 - **Facilidad de Uso:** Proporciona API de alto nivel en Java, Scala, Python y R, lo que lo hace accesible para desarrolladores con diferentes preferencias de lenguaje.
 - **Versatilidad:** Admite procesamiento por lotes, consultas interactivas, transmisión en tiempo real, aprendizaje automático y procesamiento de gráficos, todo dentro de una sola plataforma.
 
-![Apache Spark](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40gahogg%2Fa-gentle-introduction-to-pyspark-b4e9a06199b3&psig=AOvVaw0PrDZFIA74Ml2RrSnTD-CK&ust=1700712762309000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiPhfPe1oIDFQAAAAAdAAAAABAE)
+![Apache Spark](https://miro.medium.com/v2/resize:fit:1400/1*QWlL7znJ_pJSJIhrdCZfcA.png)
 
 ## Componentes de Apache Spark:
 
