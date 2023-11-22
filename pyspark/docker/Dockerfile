@@ -4,20 +4,21 @@ FROM continuumio/miniconda3:latest
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the sparkenv.yml file into the container at /app
-COPY sparkenv.yml /app/sparkenv.yml
+# Copy the environment.yml file into the container at /app
+COPY environment.yml /app/environment.yml
 COPY notebooks /app/notebooks
 
-# Create and activate the conda environment
-RUN conda env create -f sparkenv.yml && \
-    echo "source activate $(head -1 sparkenv.yml | cut -d' ' -f2)" > ~/.bashrc && \
-    /bin/bash -c "source activate $(head -1 sparkenv.yml | cut -d' ' -f2) && \
-    python -m ipykernel install --user --name=$(head -1 sparkenv.yml | cut -d' ' -f2) && \
-    conda clean -afy"
+# Create a Conda environment from the YAML file
+RUN conda env create -f environment.yml
 
-# Expose the port for Jupyter Lab
+# Activate the Conda environment
+SHELL ["conda", "run", "-n", "myenv", "/bin/bash", "-c"]
+
+# Install IPython kernel for the Conda environment
+RUN python -m ipykernel install --user --name myenv --display-name "myenv"
+
+# Expose the Jupyter Lab port
 EXPOSE 8888
 
-# Start Jupyter Lab upon container launch
-CMD ["bash", "-c", "source activate $(head -1 sparkenv.yml | cut -d' ' -f2) && \
-    jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''"]
+# Start Jupyter Lab without password
+CMD ["conda", "run", "-n", "myenv", "jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
